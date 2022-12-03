@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Pizzaria kau</title>
+</head>
+
+<body>
+
+    <h1>Pizza</h1>
+    <br>
+    <p>Selecione o tamanho da pizza:
+        <select class="form-select" aria-label="selectTamanho" id="tamanho">
+            <option value="GIGANTE"selected>Gigante</option>
+            <option value="GRANDE">Grande</option>
+            <option value="MEIDA">Media</option>
+            <option value="PEQUENA">Pequena</option>
+        </select>
+    </p>
+
+
+    <P>Selecione o sabor:
+        <select class="form-select" aria-label="selectsabor" id="sabor">
+            <option value="CALABRESA"selected>Calabresa</option>
+            <option value="FRANGO">frango</option>
+            <option value="PEPERONI">Peperoni</option>
+            <option value="PORGUESA">Portuguesa</option>
+        </select>
+    </P>
+
+    <P>Selecione a borda:
+        <select class="form-select" aria-label="selectborda" id="borda">
+            <option value="SEM BORDA"selected>Sem borda</option>
+            <option value="CATUPIRY">Catupiry</option>
+            <option value="CHEDDAR">Cheddar</option>
+            <option value="CHOCOLATE">Chocolate</option>
+        </select>
+    </P>
+    <P>Selecione o tipo de refrigerante:
+        <select class="form-select" aria-label="selectrefri" id="refri">
+            <option value="SEM REFRIGERANTE"selected>Sem refrigerante</option>
+            <option value="COCA-COLA">Coca-Cola</option>
+            <option value="PURESA">Puresa</option>
+            <option value="FANTA-LARANJA">Fanta-Laranja</option>
+        </select>
+    </P>
+    <div>
+        <button type="button" class="btn btn-outline-primary" id="fazerPedido">Fazer Pedido</button>
+    </div>
+
+    <p>Seu pedido:</p>
+    <h6 id="saidaPedido"></h6>
+    <br>
+    <p>Total a pagar:</p>
+    <h6 id="totalAPagar"></h6>
+    <br>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="./pizzaria.js"></script>
+
+</body>
+
+</html>
